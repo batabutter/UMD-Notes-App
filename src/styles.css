@@ -1,0 +1,29 @@
+* {
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: rgb(59, 59, 59);
+}
+
+
+
+body {
+    text-align: left;
+    color: hsl(0, 0%, 74%);
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.btnStyle {
+    background: hwb(200 0% 0% / 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(200, 100%, 50%);
+    padding: 0.25em 0.75em;
+    border-radius: 1.25em;
+    cursor: pointer;
+    outline: none;
+}
+
+.subCategory {
+    font-family: 'Courier New', Courier, monospace;
+    color: hsl(0, 0%, 0%);
+}
