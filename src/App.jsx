@@ -13,9 +13,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1>Creating a web-based application : </h1>
-      </div>
+      <title>UMD Notes App</title>
+
+      <h1 className = "title">Collection of UMD Notes : </h1>
 
       <div>
         <button className = "btnStyle">CMSC 216</button>

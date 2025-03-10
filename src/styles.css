@@ -4,12 +4,18 @@
     background-color: rgb(59, 59, 59);
 }
 
-h1 {
+.title {
+    margin: 0 auto;
+    text-align: center;
     border: 1px solid hsl(200, 100%, 50%);
+    padding: 0.25em .75em;
+    border-radius: 1.25em;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 body {
-    text-align: left;
     color: hsl(0, 0%, 74%);
     max-width: 400px;
     padding: 1rem;
@@ -31,7 +37,23 @@ body {
 }
 
 .pdf-div {
-    padding: 50px;
+    padding: 10px;
     background-color:rgb(110, 110, 110);
-    margin-top: 50px;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.skimButtonStyle{
+    background: hwb(200 0% 0% / 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(201, 82%, 7%);
+    padding: 0.05em .35em;
+    border-radius: 1.25em;
+    cursor: pointer;
+    outline: none;
+}
+
+.pageCount {
+    font-family: Cambria;
+    font-size: smaller;
 }
