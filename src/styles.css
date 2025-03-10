@@ -4,7 +4,9 @@
     background-color: rgb(59, 59, 59);
 }
 
-
+h1 {
+    border: 1px solid hsl(200, 100%, 50%);
+}
 
 body {
     text-align: left;
@@ -26,4 +28,10 @@ body {
 .subCategory {
     font-family: 'Courier New', Courier, monospace;
     color: hsl(0, 0%, 0%);
+}
+
+.pdf-div {
+    padding: 50px;
+    background-color:rgb(110, 110, 110);
+    margin-top: 50px;
 }
