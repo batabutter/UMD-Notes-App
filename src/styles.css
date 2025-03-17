@@ -2,11 +2,10 @@
     font-size: larger;
     font-family: sans-serif;
     background-color: rgb(59, 59, 59);
+    margin: auto 0;
 }
 
 .title {
-    margin: 0 auto;
-    text-align: center;
     border: 1px solid hsl(200, 100%, 50%);
     padding: 0.25em .75em;
     border-radius: 1.25em;
@@ -16,12 +15,15 @@
 }
 
 body {
+    margin: 0 auto;
     color: hsl(0, 0%, 74%);
     max-width: 400px;
     padding: 1rem;
 }
 
 .btnStyle {
+    font-size: .5em;
+    display: flex;
     background: hwb(200 0% 0% / 0.1);
     border: 1px solid hsl(200, 100%, 50%);
     color: hsl(200, 100%, 50%);
@@ -30,6 +32,34 @@ body {
     cursor: pointer;
     outline: none;
 }
+
+.btnFormat{
+    margin-right: auto;
+    display: flex;
+}
+
+.dropBtn {
+    font-size: smaller;
+    background-color: rgb(87, 114, 190);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropContent a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropContent {
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 100px;
+}
+
 
 .subCategory {
     font-family: 'Courier New', Courier, monospace;
