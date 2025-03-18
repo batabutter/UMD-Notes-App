@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
+    "@tsparticles/all": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-pdf": "^9.2.1"

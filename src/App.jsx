@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './styles.css'
 import { pdfjs } from 'react-pdf';
 import PdfComp from './PdfComp';
+import ParticlesComponent from './assets/Particles';
 import { LectureDisplay } from './LectureDisplay';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -14,8 +15,9 @@ function App() {
 
   return (
     <>
-      <div className="container">
 
+      <div className="container">
+      <ParticlesComponent id = "particles"/>
         <div>
           <h1 className="title">Collection of UMD Notes : </h1>
 
@@ -27,9 +29,7 @@ function App() {
             </div>
           </div>
         </div>
-        
         <PdfComp />
-
       </div>
 
     </>

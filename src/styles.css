@@ -1,7 +1,8 @@
 * {
+    z-index: 1;
     font-size: larger;
     font-family: sans-serif;
-    background-color: rgb(59, 59, 59);
+    background-color: transparent;
 }
 
 .title {
@@ -21,7 +22,6 @@
     max-height: 600px;
     height: 150%;
     color: hsl(0, 0%, 74%);
-
 }
 
 .container .pdfProperties {
@@ -51,16 +51,15 @@
 }
 
 .dropdown button{
+    border: 1px solid rgb(87, 114, 190);
     width: 150px;
     flex-shrink: 0; 
     margin-top: 100px;
     border-radius: 1.25em;
     font-size: .5em;
-    background-color: rgb(87, 114, 190);
-    color: white;
+    color: hsl(0, 0%, 74%);
     
     padding: 10px 15px;
-    border: none;
     cursor: pointer;
 }
 
@@ -101,7 +100,6 @@
 
 .pdf-div {
     padding: 10px;
-    background-color:rgb(110, 110, 110);
     width: 100% !important;
     height: 100% !important;
 }
@@ -118,6 +116,17 @@
 }
 
 .pageCount {
-    font-family: Cambria;
-    font-size: smaller;
+    font-size: 20px;
+    background: hwb(200 0% 0% / 0.1);
+    border: 1px solid hsl(200, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 0.05em .35em;
+    border-radius: 1.25em;
+}
+
+.particles canvas {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
