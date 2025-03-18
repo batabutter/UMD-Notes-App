@@ -2,7 +2,6 @@
     font-size: larger;
     font-family: sans-serif;
     background-color: rgb(59, 59, 59);
-    margin: auto 0;
 }
 
 .title {
@@ -14,11 +13,16 @@
     margin-bottom: 0.5rem;
 }
 
-body {
-    margin: 0 auto;
+.container {
+   justify-content: center;
+    
+    gap: 20px;
+    max-height: 600px;
+    height: 150%;
+    margin: 0;
+    display: flex;
     color: hsl(0, 0%, 74%);
-    max-width: 400px;
-    padding: 1rem;
+
 }
 
 .btnStyle {
@@ -38,7 +42,9 @@ body {
     display: flex;
 }
 
-.dropBtn {
+.dropdown button{
+    margin-top: 100px;
+    border-radius: 1.25em;
     font-size: smaller;
     background-color: rgb(87, 114, 190);
     color: white;
@@ -49,17 +55,29 @@ body {
 
 .dropContent a {
     display: block;
-    color: black;
+    background-color: rgb(95, 95, 95);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 15px;
 }
 
 .dropContent {
+    display: none;
+    font-size: 20px;
     position: absolute;
-    background-color: aquamarine;
-    min-width: 100px;
+    background-color: rgb(95, 95, 95);
+    padding: 10px 15px;
+    min-width: 20px;
+    box-shadow: 2px 2px 5px black;
 }
 
+.dropdown:hover .dropContent {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: rgb(64, 91, 165);
+}
 
 .subCategory {
     font-family: 'Courier New', Courier, monospace;
