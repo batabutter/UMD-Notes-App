@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import pdf from "../data/lorem.pdf"
+import pdf2 from "../data/sample.pdf"
 import './styles.css'
 
 function PdfComp() {
+  console.log("bruh");
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -25,31 +27,47 @@ function PdfComp() {
 
   return (
     <>
-    <div className="pdf-div">
-      <Document 
-      file={pdf} 
-      onLoadSuccess={onDocumentLoadSuccess} >
+      <div className="pdfProperties">
 
-        <Page pageNumber={pageNumber} renderTextLayer={false}
-          renderAnnotationLayer={false} width = {400}/>
-      </Document>
+        <div className="dropdown">
+          <button>Lecture #</button>
+          <div className="dropContent">
+            <a href="">Lecture 1</a>
+            <a href="">Lecture 2</a>
+          </div>
+        </div>
 
-      <p className = "pageCount"> Page {pageNumber} of {numPages}
-      </p>
-    </div>
+        <div className="pdf-div">
+          <Document
+            file={pdf}
+            onLoadSuccess={onDocumentLoadSuccess} >
 
-    <div>
-      <button 
-        className = "skimButtonStyle"
-        onClick={() => bckPage(pageNumber)}> 
-        Back
-      </button>
-      <button 
-        className = "skimButtonStyle"
-        onClick={() => advPage(pageNumber)}> 
-        Next 
-      </button> 
-    </div>
+            <Page pageNumber={pageNumber} renderTextLayer={false}
+              renderAnnotationLayer={false} width={400} />
+          </Document>
+
+          <p className="pageCount"> Page {pageNumber} of {numPages}
+          </p>
+
+          <div>
+            <button
+              className="skimButtonStyle"
+              onClick={() => bckPage(pageNumber)}>
+              Back
+            </button>
+            <button
+              className="skimButtonStyle"
+              onClick={() => advPage(pageNumber)}>
+              Next
+            </button>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
     </>
   );
 }

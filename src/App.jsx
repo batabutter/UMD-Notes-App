@@ -15,14 +15,6 @@ function App() {
   return (
     <>
       <div className="container">
-        
-        <div className="dropdown">
-          <button>Lecture #</button>
-          <div className="dropContent">
-            <a href="">Lecture 1</a>
-            <a href="">Lecture 2</a>
-          </div>
-        </div>
 
         <div>
           <h1 className="title">Collection of UMD Notes : </h1>
@@ -34,9 +26,9 @@ function App() {
               <button className="btnStyle">MATH 241</button>
             </div>
           </div>
-
-          <PdfComp />
         </div>
+        
+        <PdfComp />
 
       </div>
 
