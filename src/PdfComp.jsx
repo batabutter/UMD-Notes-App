@@ -5,7 +5,6 @@ import pdf2 from "../data/sample.pdf"
 import './styles.css'
 
 function PdfComp() {
-  console.log("bruh");
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -32,8 +31,8 @@ function PdfComp() {
         <div className="dropdown">
           <button>Lecture #</button>
           <div className="dropContent">
-            <a href="">Lecture 1</a>
-            <a href="">Lecture 2</a>
+            <a href="#">Lecture 1</a>
+            <a href="#">Lecture 2</a>
           </div>
         </div>
 
