@@ -68,8 +68,6 @@ function PdfComp() {
 
         </div>
 
-
-
       </div>
 
     </>

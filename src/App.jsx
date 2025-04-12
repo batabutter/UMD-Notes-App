@@ -3,7 +3,7 @@ import './styles.css'
 import { pdfjs } from 'react-pdf';
 import PdfComp from './PdfComp';
 import ParticlesComponent from './assets/Particles';
-import { LectureDisplay } from './LectureDisplay';
+import { ClassDisplay }  from './ClassDisplay';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -12,6 +12,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 function App() {
   const [newItem, setItem] = useState("")
+  const names = ["CMSC 216", "CMSC 250", "MATH 241"]
 
   return (
     <>
@@ -21,15 +22,12 @@ function App() {
         <div>
           <h1 className="title">Collection of UMD Notes : </h1>
 
-          <div>
-            <div className="btnFormat">
-              <button className="btnStyle">CMSC 216</button>
-              <button className="btnStyle">CMSC 250</button>
-              <button className="btnStyle">MATH 241</button>
-            </div>
-          </div>
+          <ClassDisplay 
+          names = {names}/>
+
         </div>
-        <PdfComp />
+        <PdfComp 
+        names = {names}/>
       </div>
 
     </>
