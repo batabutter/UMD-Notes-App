@@ -16,7 +16,13 @@ function App() {
 
   return (
     <>
-
+  {
+    /*
+    TODO: Move PDFComp into class display, add ClassData Component, use it to
+    store the name, number of lectures, and names of the pdfs corresponding to 
+    the lectures.
+    */
+  }
       <div className="container">
       <ParticlesComponent id = "particles"/>
         <div>
