@@ -7,6 +7,7 @@ import './styles.css'
 function PdfComp() {
   const [numPages, setNumPages] = useState();
   const [pageNumber, setPageNumber] = useState(1);
+  const [filename, setPDF] = useState("../data/lorem.pdf");
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -24,6 +25,10 @@ function PdfComp() {
       setPageNumber(pageNumber - 1)
   }
 
+  function changePDF(file) {
+    setPDF(file);
+  }
+
   return (
     <>
       <div className="pdfProperties">
@@ -31,14 +36,14 @@ function PdfComp() {
         <div className="dropdown">
           <button>Lecture #</button>
           <div className="dropContent">
-            <a href="#">Lecture 1</a>
-            <a href="#">Lecture 2</a>
+            <a href="#" onClick={() => changePDF("../data/lorem.pdf")}>Lecture 1</a>
+            <a href="#" onClick={() => changePDF("../data/sample.pdf")}>Lecture 2</a>
           </div>
         </div>
 
         <div className="pdf-div">
           <Document
-            file={pdf}
+            file={filename}
             onLoadSuccess={onDocumentLoadSuccess} >
 
             <Page pageNumber={pageNumber} renderTextLayer={false}
